@@ -1,11 +1,11 @@
 .questionContainer {
   background-color: rgb(248, 248, 248);
-  border: 1px solid black;
   border-radius: 15px;
   display: flex;
   align-items: center;
   padding: 0 1rem;
   width: fit-content;
+  margin-bottom: 1rem;
 }
 
 .answerInput {
@@ -14,13 +14,57 @@
 }
 
 .normalBackground {
-  background-color: grey;
+  background-color: rgb(248, 248, 248);
+  border: 1px solid rgb(97, 97, 97);
 }
 
 .correctBackground {
-  background-color: green;
+  background-color: #73fa6e;
+  border: 1px solid #49a146;
 }
 
 .wrongBackground {
-  background-color: red;
+  background-color: #ed6e58;
+  border: 1px solid #a34c3d;
+}
+
+.modal {
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.resultsModal {
+  border: 1px solid black;
+  border-radius: 15px;
+  width: 500px;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.resultsModal h4 {
+  font-size: 30px;
+}
+
+.closeModal {
+  margin-bottom: 2rem;
+  border: none;
+}
+
+.body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.questions {
+  margin-bottom: 2rem;
 }
