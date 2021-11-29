@@ -25,8 +25,8 @@ export default function Home() {
     <div className={styles.body}>
       <h1>Math Quiz</h1>
       <div className={styles.questions}>
-        {[...Array(10)].map(() => (
-        <Question submited={submited} onCorrectAnswer={handleCorrectAnswer}></Question>
+        {[...Array(10)].map((currElement, index) => (
+        <Question submited={submited} onCorrectAnswer={handleCorrectAnswer} key={index}></Question>
       ))}
       </div>
       <ResultsModal show={showResults} onClose={() => window.location.reload()} results={score}></ResultsModal>
